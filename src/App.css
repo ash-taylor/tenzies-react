@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: karla;
+  background: #0B2434;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.win-box {
+  position: absolute;
+  background-color: #5035FF;
+  padding: 10px;
+  text-align: center;
+  border-radius: 7px;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+}
+
+.win-box > h1 {
+  color: #FFFFFF;
+}
+
+main {
+  padding: 40px 0px;
+  border-radius: 10px;
+  background: #F5F5F5;
+  height: auto;
+  min-height: 50vh;
+  max-width: 75vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #2B283A;
+  font-family: karla;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  font-size: 3rem;
+  letter-spacing: -0.03em;
+  margin: 7px;
+  padding: 0;
+}
+
+p {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+  color: #4A4E74;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.die-container {
+  /* padding: 35px; */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.die {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 3.81277px;
+  min-width: 50px;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.die.isHeld {
+  background-color: #59E391;
+}
+
+.roll-counter {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.roll-button {
+  border: none;
+  width: 150px;
+  min-height: 45px;
+  background: #5035FF;
+  box-shadow: 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-family: karla;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-top: 10px;;
+}
+
+.roll-button:focus {
+  outline: none;
+}
+
+.roll-button:active {
+  box-shadow: inset 0px 3.2px 7.68px rgba(0, 0, 0, 0.18);
+}
